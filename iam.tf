@@ -4,7 +4,7 @@ terraform {
   backend "remote" {}
 }
 
-resource "aws_iam_user" "lb" {
-  name = "remoteuser"
+resource "aws_iam_user" "iam" {
+  name = "terraformcloud_user"
   path = "/system/"
 }
